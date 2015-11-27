@@ -26,9 +26,9 @@ function pause() {
 
 
 $(document.body).on('hidden.bs.modal', function () {
-    
+
     document.getElementById("ourvideo").play();
-     
+
 
 });
 
@@ -46,18 +46,19 @@ $(".playlistButton").click(function () {
 });
 
 
-$(document).ready(function () {
-    $(".tagSubmit").click(function () {
-        $.ajax({
-            url: 'test',
-            data: $('form.contact').serialize(),
-            success: function () {
-                document.getElementById("responseSuccess").removeAttribute('hidden');
-                $("#form-content").modal('hide');
-            },
-            error: function () {
-               document.getElementById("responseFailure").removeAttribute('hidden');
-            }
-        });
+
+$("button#tagSubmit").click(function () {
+    $.ajax({
+        type:'GET',
+        url: 'test',
+        data: { tagInput : $('#tagInput').val(), urlInput : $('#urlInput').val()},
+        success: function () {
+            document.getElementById("responseSuccess").removeAttribute('hidden');
+            $(".modalHide").modal('hide');
+        },
+        error: function () {
+            document.getElementById("responseFailure").removeAttribute('hidden');
+            $(".modalHide").modal('hide');
+        }
     });
 });
