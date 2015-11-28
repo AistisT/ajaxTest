@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>The Project | Page Affix Sidebar</title>
+        <meta name="description" content="The Project a Bootstrap-based, Responsive HTML5 Template">
+        <meta name="author" content="htmlcoder.me">
+
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- Web Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Font Awesome CSS -->
+        <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+        <!-- Fontello CSS -->
+        <link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+
+        <!-- Plugins -->
+        <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+        <link href="css/animations.css" rel="stylesheet">
+        <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+        <link href="plugins/hover/hover-min.css" rel="stylesheet">	
+        <link href="plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
+
+        <!-- the project core CSS file -->
+        <link href="css/style.css" rel="stylesheet" >
+
+        <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
+        <link href="css/skins/light_blue.css" rel="stylesheet">
+
+        <!-- Custom css --> 
+        <link href="css/custom.css" rel="stylesheet">
+
+
+    </head>
+
+    <!-- body classes:  -->
+    <!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
+    <!-- "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> -->
+    <!-- "transparent-header": makes the header transparent and pulls the banner to top -->
+    <!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
+    <body class="no-trans   ">
+
+        <!-- scrollToTop -->
+        <!-- ================ -->
+        <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
+
+        <!-- page wrapper start -->
+        <!-- ================ -->
+        <div class="page-wrapper">
+
+
+            <!-- breadcrumb start -->
+            <!-- ================ -->
+            <div class="breadcrumb-container">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li><i class="fa fa-home pr-10"></i><a href="index.html">Home</a></li>
+                        <li class="active">Video Upload</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- breadcrumb end -->
+
+            <!-- main-container start -->
+            <!-- ================ -->
+            <section class="main-container">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="form-group ">
+                                <div class="col-sm-3"></div>
+                            <h1 class="text-center text-info col-sm-9" style="text-align: left;">Video Upload</h1>
+                            </div>
+                            <form class="form-horizontal " role="form">
+                                <div class="form-group ">
+                                    <label for="inputTitle" class="col-sm-3 control-label ">Video Title</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputLanguage" class="col-sm-3 control-label">Video Language</label>
+                                    <div class="col-sm-9">
+                                        <select  class="form-control" id="inputLanguage">
+                                            <option>English</option>
+                                            <option>French</option>
+                                            <option>German</option>
+                                            <option>Spanish</option>
+                                            <option>Russian</option>
+                                            <option>Mandarin</option>
+                                            <option>Cantonese</option>
+                                            <option>Hindi</option>
+                                            <option>Portuguese</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputDescription" class="col-sm-3 control-label">Description</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="form-control" rows="3" id="inputDescription"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group text-right">
+                                    <div class="col-sm-3">
+                                    <label for="inputTag" class="control-label">Tags </label>
+                                    <label class="control-label text-muted h6">  *Hold "Ctrl" button to select multiple tags</label>
+                                    </div>
+                                    <div class="col-sm-9">						
+                                        <select multiple="" class="form-control" id="inputTag">
+                                            <option>C#</option>
+                                            <option>C++</option>
+                                            <option>Java</option>
+                                            <option>Haskell</option>
+                                            <option>ArrayList</option>
+                                            <option>Array</option>
+                                            <option>TreeMap</option>
+                                            <option>Python</option>
+                                            <option>Django</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="selectedTags" class="col-sm-3 control-label">Selected Tags</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="form-control " rows="1" id="selectedTags" readonly style="opacity: 1;" ></textarea>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="form-group ">
+                                    <label for="inputVideo" class="col-sm-3 control-label">Select Video</label>
+                                    <div class=" col-sm-9">
+                                        <div class=" fileinput fileinput-new input-group " data-provides="fileinput">
+                                            <div class="form-control" data-trigger="fileinput" id="inputVideo"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                            <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                            <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-12 text-right">
+                                        <button type="submit" class="btn btn-default">Upload</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- main-container end -->
+
+        </div>
+        <!-- page-wrapper end -->
+
+        <!-- JavaScript files placed at the end of the document so the pages load faster -->
+        <!-- ================================================== -->
+        <!-- Jquery and Bootstap core js files -->
+        <script type="text/javascript" src="plugins/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Modernizr javascript -->
+        <script type="text/javascript" src="plugins/modernizr.js"></script>
+
+        <!-- Magnific Popup javascript -->
+        <script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <!-- Appear javascript -->
+        <script type="text/javascript" src="plugins/waypoints/jquery.waypoints.min.js"></script>
+
+        <!-- Count To javascript -->
+        <script type="text/javascript" src="plugins/jquery.countTo.js"></script>
+
+        <!-- Parallax javascript -->
+        <script src="plugins/jquery.parallax-1.1.3.js"></script>
+
+        <!-- Contact form -->
+        <script src="plugins/jquery.validate.js"></script>
+
+        <!-- Owl carousel javascript -->
+        <script type="text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
+
+        <!-- Jasny  javascript -->
+        <script type="text/javascript" src="plugins/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+
+        <!-- SmoothScroll javascript -->
+        <script type="text/javascript" src="plugins/jquery.browser.js"></script>
+        <script type="text/javascript" src="plugins/SmoothScroll.js"></script>
+
+        <!-- Initialization of Plugins -->
+        <script type="text/javascript" src="js/template.js"></script>
+
+        <!-- Popcorn -->
+        <script type="text/javascript" src="js/popcorn-complete.min.js"></script>
+        <script type="text/javascript" src="js/popcorn.tagthisperson.js"></script>
+        <!-- Custom Scripts -->
+        <script type="text/javascript" src="js/custom.js"></script>
+    </body>
+</html>
